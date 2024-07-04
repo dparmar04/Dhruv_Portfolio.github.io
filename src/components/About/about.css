@@ -115,10 +115,12 @@ background: #0B2447;
 }
 @media screen and (max-width: 378px) {
    .about{
-      padding: 30 20px;
+      padding: 20px 20px;
       height: 100%;
    }
-   
+   .about__container {
+      padding: 10px 0px;
+   }
    .about h1 {
       font-size: 20px;
       padding: 0;
@@ -127,4 +129,13 @@ background: #0B2447;
    .about__container_1 p {
       font-size: 10px;
    }
+   .about__container_2 {
+      width: 100%;
+      padding: 0;
+   }
+   .about__conatainer_2_img img {
+      width: 60%;
+      height: auto;
+   }
+
 }

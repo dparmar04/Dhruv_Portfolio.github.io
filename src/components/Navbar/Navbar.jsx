@@ -28,7 +28,7 @@ const Navbar = () => {
       }, [sidebarOpen]);
 
       
-      gsap.from("#nav h2 , #nav .nav-links ul li", {
+      gsap.from("#nav .logo img , #nav .nav-links ul li", {
          y: -30,
          opacity: 0,
          delay:0.5,

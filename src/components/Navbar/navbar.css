@@ -1,0 +1,140 @@
+#nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 50px;
+   color: white;
+   background-color: #0B2447;
+   position: sticky;
+   box-shadow: 0 8px 16px rgba(8, 31, 60, 0.8);
+   border-bottom:1px solid #576bbc6c; 
+     position: relative;
+  z-index: 1000;
+
+}
+#nav .logo img{
+   width: 50px;
+   height: 50px;
+}
+.nav-links {
+   display: flex;
+   flex: 1;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   width: 500px;
+}
+.nav-links ul {
+   list-style: none;
+   display: flex;
+   
+   gap: 20px;
+   padding: 0;
+}
+
+.nav-links ul li a {
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+}
+.nav-links a{
+   font-size: 18px;
+   padding: 0px 20px;
+   font-weight: 600; 
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   transition: all 0.3s ease-in-out;
+}
+.nav-links a:hover {
+   color: #576CBC;
+}
+#nav h2 {
+   font-size: 30px;
+   font-weight: 400;
+   font-family: "Black Ops One", system-ui;
+
+}
+
+.sidebar {
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   background-color: white;
+   backdrop-filter: blur(50px);
+   transform: translateX(100%);
+   transition: all 0.5s ease;
+   z-index: 9999;
+
+}
+
+.sidebar.open {
+   transform: translateX(0);
+   /* Show sidebar when open */
+}
+.sidebar li {
+   list-style: none;
+   padding: 20px 0px;
+   font-size: 18px;
+   color: black;
+}
+
+.sidebar li a {
+   color: #0b2447;
+   text-decoration: none;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.ri-close-large-fill {
+   color: black;
+   font-size: 30px;
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   cursor: pointer;
+}
+
+.ri-menu-5-line {
+   color: white;
+   font-size: 30px;
+   top: 20px;
+   right: 30px;
+   cursor: pointer;
+   display: none;
+}
+
+@media screen and (max-width: 960px) {
+   .nav-links ul li{
+      display: none;
+   }
+   .ri-menu-5-line{
+      display: block;
+   }
+   .sidebar {
+      display: flex;
+      z-index: 999;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   #nav {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   #nav .logo h2{
+      font-size: 20px;
+   }
+   #nav .ri-menu-5-line {
+      font-size: 20px;
+   }
+}

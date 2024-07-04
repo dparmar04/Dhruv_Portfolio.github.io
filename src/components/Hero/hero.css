@@ -1,0 +1,142 @@
+.hero{
+   height: 100vh;
+   width: 100%;
+   /* position: relative; */
+/* background: #0B2447; */
+background: url(../../../assets/hero.svg);
+   /* background: linear-gradient(180deg, #0a192f 16%, #006989 46%, #0a192f 76%); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   z-index: 1;
+}
+
+.hero .hero__container {
+   display: flex;
+   /* position: relative; */
+   height: 100%;
+   justify-content: space-around;
+   align-items: center;
+   position: relative;
+   z-index: 1;
+}
+
+
+.hero .hero__container .hero__container__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+}
+.hero__container__text__title__name {
+   font-family: "Black Ops One", system-ui;
+   font-weight: 400;
+   color: #A5D7E8;
+
+}
+.hero__container__text {
+   /* background-color: rgba(152, 251, 152, 0.351); */
+   width: 40%;
+   height: 100%;
+}
+
+.hero__container__text h1 {
+   font-size: 4rem;
+   font-weight: 700;
+   color: #fff;
+   padding: 10px;
+   margin: 0;
+
+}
+
+.hero__container__text__description {
+   font-family: "Bungee", sans-serif;
+   font-weight: 400;
+   font-size: 1.5rem;
+   color: #fff;
+   padding: 20px;
+
+}
+
+.hero__container__text__button {
+   padding: 10px 50px;
+   font-size: 20px;
+   font-weight: 700;
+   align-items: center;
+   display: flex;
+   background-color: #fff;
+   border: 1px solid #fff;
+   text-decoration: none;
+   color: black;
+}
+
+.hero__container__text__button:hover {
+   background-color: transparent;
+   color: #fff;
+   transition: 0.3s ease-in;
+}
+.hero__container_social {
+   display: flex;
+   justify-content: center;
+   margin: 20px 10px;
+}
+.hero__container_social img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   object-fit: contain;
+   margin-right: 10px;
+   margin-left: 10px;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+.hero__container_social img:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 5px 20px  #A5D7E8;
+}
+
+@media screen and (max-width:1024px) {
+   .hero__container__text {
+      width: 500px;
+   }
+}
+
+@media screen and (max-width: 960px) {
+   .hero__container__text__title__name {
+      color: #fff;
+      
+   }
+
+}
+
+@media screen and (max-width: 550px) {
+   .hero__container__text {
+      width: 100%;
+   }
+   .hero__container__text h1{
+      font-size: 30px;
+   }
+   .hero__container__text__description {
+      font-size: 15px;
+   }
+   .hero__container__text__button {
+      font-size: 15px;
+      align-items: center;
+      display: flex;
+      padding: 10px 25px;
+   }
+   .hero__container_social {
+      display: flex;
+      align-items: center;
+   }
+   .hero__container_social img{
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-left: 10px;
+   }
+}
+

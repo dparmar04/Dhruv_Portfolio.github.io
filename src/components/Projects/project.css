@@ -1,0 +1,151 @@
+.project {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   /* background-image: url(../../../assets/Project_BG2.jpg); */
+   background-color: #0B2447;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.project h1 {
+   font-size: 40px;
+   padding: 20px 0px;
+   color: #A5D7E8;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   font-family: "Black Ops One", system-ui;
+   text-transform: uppercase;
+   font-weight: normal;
+}
+.project__content {
+   padding: 40px 50px;
+   display: flex;
+      flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   color: aliceblue;
+}
+.project__content__item {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+   height: 480px;
+   margin: 10px;
+   padding: 20px 20px;
+   background-color: #1d1f328b;
+   border-radius: 12px;
+   border: 2px solid #1d1f32;
+}
+.project__content__item:hover {
+   box-shadow: 0px 4px 20px 4px #333759b4;
+}
+
+.project__content__item h2 {
+   font-size: 25px;
+   font-family:"Bungee", sans-serif;
+   text-align: center;
+   align-items: center;
+   padding: 10px 10px 20px 10px;
+}
+.project__content__item img {
+   width: 350px;
+   object-fit: contain;
+   align-self: center;
+   border: 1px solid #262941;
+}
+.project__content__item p {
+   font-size: 15px;
+   font-weight: 200;
+   padding: 20px 10px;
+   font-style: italic;
+   line-height: 1.5;
+   text-align:justify;
+   word-spacing: 0px;
+}
+.project__content__item a {
+   font-size: 18px;
+   padding: 10px 50px;
+   color: white;
+   position: absolute;
+   bottom: 10px;
+   background-color: #1d1f32;
+   border-radius: 15px;
+   border: 2px solid #4445568b;
+   cursor: pointer;
+   align-content: center;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+.project__content__item a:hover {
+   background-color: transparent;
+   border-color: whitesmoke;
+}
+.project__content__item i {
+   font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+   .project__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+   }
+   .project__content__item {
+      max-height: max-content;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+   }
+   .project__content__item img {
+      width: 100%;
+
+   }
+}
+@media screen and (max-width: 550px) {
+   .project {
+      padding: 50px 20px;
+   }
+   .project h1 {
+      font-size: 30px;
+      padding: 0;
+   }
+   .project__content {
+      padding: 10px 20px;
+   }
+}
+@media screen and (max-width: 378px) {
+   .project {
+      padding: 30px 10px;
+   }
+   .project h1 {
+      font-size: 20px;
+      padding: 0;
+   }
+   .project__content {
+      padding: 0px 0px;
+   }
+   .project__content__item {
+      padding: 20px 30px;
+   }
+   .project__content__item h2{
+      font-size: 20px;
+   }
+   .project__content__item img {
+      width: 100%;
+   }
+   .project__content__item a{
+      font-size: 15px;
+      padding: 10px 20px;
+      align-items: center;
+   }
+   .project__content__itema a i{
+      size: 10px;
+   }
+}
+

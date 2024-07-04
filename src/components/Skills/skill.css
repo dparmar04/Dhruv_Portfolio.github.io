@@ -1,0 +1,100 @@
+.skills {
+   height: 100%;
+   width: 100%;
+   padding: 50px 20px;
+background: #0B2447;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: #fff;
+}
+
+.skills h1 {
+   font-size: 40px;
+   padding: 20px 0px;
+   color: #A5D7E8;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   font-family: "Black Ops One", system-ui;
+      text-transform: uppercase;
+         font-weight: normal;
+}
+
+.skills_container {
+   padding: 20px 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.skills_container_imgs {
+   width: 800px;
+
+}
+.skills_container_imgs img {
+   width: 150px;
+   height: 150px;
+   object-fit: contain;
+   padding: 20px 10px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills_container_imgs img:hover {
+   transform: scale(1.1);
+   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width:1024px) {
+   .skills_container {
+      padding: 50px 20px;
+   }
+   .skills_container_imgs {
+      width: 600px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .skills_container_imgs {
+      width: 100%;
+   }
+   .skills_container_imgs img{
+      width: 120px;
+   }
+}
+@media screen and (max-width: 550px) {
+   .skills h1 {
+      font-size: 30px;
+      padding: 0;
+   }
+   .skills_container {
+      padding: 0px;
+   }
+   .skills_container_imgs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .skills_container_imgs img{
+      width: 90px;
+      padding: 10px;
+   }
+}
+@media screen and (max-width: 378px) {
+   .skills {
+      padding: 30px 10px;
+   }
+   .skills h1 {
+      font-size: 20px;
+      padding: 0;
+   }
+   .skills_container_imgs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .skills_container_imgs img{
+      width: 70px;
+      padding: 10px;
+   }
+}

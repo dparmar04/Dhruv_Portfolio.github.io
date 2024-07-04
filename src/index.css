@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+      line-height: 1.6;
+      height: 100%;
+      width: 100%;
+}
+body {
+   overflow-x: hidden;
+}
+
+#overlay {
+   background-color: transparent;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 10;
+}

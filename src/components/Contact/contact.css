@@ -120,6 +120,9 @@ textarea {
    }
 }
 @media screen and (max-width: 378px) {
+   .contact {
+      padding: 20px 10px;
+   }
    .contact h1 {
       font-size: 20px;
       padding: 0;

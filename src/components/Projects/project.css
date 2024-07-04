@@ -121,20 +121,28 @@
 }
 @media screen and (max-width: 378px) {
    .project {
-      padding: 30px 10px;
+      padding: 20px 10px;
    }
    .project h1 {
       font-size: 20px;
       padding: 0;
    }
    .project__content {
-      padding: 0px 0px;
+      padding: 20px 30px;
    }
    .project__content__item {
-      padding: 20px 30px;
+      margin: 0;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 100%;
    }
    .project__content__item h2{
       font-size: 20px;
+   }
+   .project__content__item p {
+      font-size: 14px;
+      /* padding: 0; */
+      padding-bottom: 60px;
    }
    .project__content__item img {
       width: 100%;

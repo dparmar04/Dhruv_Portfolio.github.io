@@ -140,3 +140,19 @@ background: url(../../../assets/hero.svg);
    }
 }
 
+@media screen and (max-width:378px) {
+      .hero {
+         height: 100%;
+         padding-top: 100px;
+         padding-bottom: 100px;
+      }
+    .hero__container{
+      display: flex;
+      align-items: start;
+   }
+   .hero__container__text {
+      display: flex;
+      flex-direction: column;
+      /* gap: 50px; */
+   }
+}
